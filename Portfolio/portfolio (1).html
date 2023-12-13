@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @font-face {
+  font-family: fontstyle;
+  src: url(Comfortaa-Bold.ttf);
+}
+@font-face {
+  font-family: font1;
+  src: url(./PepperidgeScript_PERSONAL_USE_ONLY.ttf);
+}
+*{
+  font-family: fontstyle;
+}
+    body, html {
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        background-color: rgb(45, 45, 45);
+    }
+    .row1{
+        display: flex;
+        width: 100%;
+        height: 10%;
+    }
+    .row2{
+        display: flex;
+        width: 100%;
+        height: 10%;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+      height:86%;
+    }
+    .container1{
+        display: flex;
+        width: 100%;
+        height: 50%;
+    }
+    .container2{
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .projects{
+        display: flex;
+        width: 100%;
+        height: 40%;
+        background-color: rgb(78, 89, 87);
+    }
+    .text{
+        display:flex;
+        height: 20%;
+        background-color: rgb(78, 89, 87);
+        width: 100%;
+    }
+    .card1{
+        display: block;
+        margin:0 10px 0 20px;
+        background-color: rgb(78, 89, 87);
+        width: 33%;
+        height: 90%;
+        border-radius: 20px;    
+        box-shadow: 0 4px 8px 0 rgb(107, 0, 230);
+        text-align: center;
+        transition: 0.3s;
+
+    }
+    #c1{
+      animation: 2.5s ease-out 0s 1 slideInRight;
+    }
+    .card1:hover {
+    transform: scale(1.03);
+    z-index: 2;
+    box-shadow: 0 8px 16px 0 rgb(167, 90, 255);
+  }
+    #img1{
+        width: 60%;
+        height: 60%;
+        margin: 30px 40px 25px 30px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    #img2{
+        width: 60%;
+        height: 60%;
+        margin: 30px 40px 25px 100px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    #img3{
+        width: 60%;
+        height: 60%;
+        margin: 30px 40px 25px 100px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+    .card1-text{
+        margin: 0 50px 20px 50px;
+        text-align: justify;
+    }
+    .card2{
+        margin:0 10px 0 10px;
+        background-color: rgb(78, 89, 87);
+        width: 33%;
+        height: 90%;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgb(107, 0, 230);
+        transition: 0.3s;
+    }
+    .card2:hover {
+    transform: scale(1.03);
+    z-index: 2;
+    box-shadow: 0 8px 16px 0 rgb(167, 90, 255);
+  }
+  #c2{
+      animation: 1s ease-out 0s 1 slideInTop;
+    }
+    .card3{
+        margin:0 20px 0 10px;
+        background-color: rgb(78, 89, 87);
+        width: 33%;
+        height: 90%;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px 0 rgb(107, 0, 230);
+        transition: 0.3s;
+    }
+    .card3:hover {
+    transform: scale(1.03);
+    z-index: 2;
+    box-shadow: 0 8px 16px 0 rgb(167, 90, 255);
+  }
+  #c3{
+    animation: 2.3s ease-out 0s 1 slideInLeft;
+  }
+    .pic{
+      animation: 1s ease-out 0s 1 slideInTop;
+        flex:20%;
+        background-color: rgb(78, 89, 87);
+        margin: 20px 10px 10px 20px;
+        border-radius: 20px;
+        transition: 0.3s;
+        box-shadow: 0 4px 8px 0 rgb(107, 0, 230);
+    }
+    .pic:hover {
+
+    transform: scale(1.03);
+    z-index: 2;
+    box-shadow: 0 8px 16px 0 rgb(167, 90, 255);
+  }
+    .image{
+        width: 170px;
+        height: 170px;
+        margin: 40px 0 0 70px ;
+        border-radius: 100px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    .about{
+      animation: 2.5s ease-in-out 0s 1 slideInRight;
+      
+        border-radius: 20px;
+        margin: 20px 20px 10px 10px; 
+        flex:80%;
+        background-color: rgb(78, 89, 87);
+        box-shadow: 0 4px 8px 0 rgb(107, 0, 230);
+        transition: 0.3s;
+    }
+    .about:hover {
+    transform: scale(1.01);
+    z-index: 2;
+    box-shadow: 0 8px 16px 0 rgb(167, 90, 255);
+  }
+    .main {
+        width: 100%;
+      height: 100%;
+      padding: 10px; /* Set your desired text color */
+    }
+    .header{
+      background:linear-gradient(to left,rgb(167, 90, 255),rgb(107, 0, 230));
+      animation: 2s ease-out 0s 1 slideInLeft;
+      border-radius: 0 0 5px 5px;
+      background-color: rgb(78, 89, 87);
+      width: 100%;
+      height:8%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px 0 rgb(119, 0, 255);
+    }
+    .footer{
+      box-shadow: 0 4px 8px 0 rgb(167, 90, 255);
+      border-radius: 5px 5px 0 0;
+      background-color: rgb(182, 182, 182);
+      width: 100%;
+      height:7%;
+    }
+    
+    .anim {
+      width: 50%;
+      align-content: center;
+      height: 10%;
+      border-radius: 5px;
+      margin-left: 27%;
+      margin-top: 30px;
+      background-color: rgb(78, 89, 87);
+      /* animation: sizeChange 2s  ; */
+      font-size: 250%;
+    }
+    .head_list{
+      padding: 20px 20px 0 20px;
+      transition: 0.3s;
+  height: 100%;
+  width: auto;
+  border-radius: 0 0 20px 20px;
+}
+
+.menu{
+  display: flex;
+  height: 100%;
+}
+.head_list:hover{
+  font-size: larger;
+  padding: 25px 25px 0 25px;
+  border-radius: 0 0 20px 20px;
+  background:linear-gradient(to left,rgb(175, 116, 241),rgb(155, 82, 240));
+}
+.htext{
+    padding-top:15px;
+    font-size: 100%;
+}
+#home{
+  margin-left: 400px;
+}
+#icon{
+  /* border-bottom: solid 5px rgb(131, 0, 0); */
+  border-right: solid 5px rgb(226, 210, 245);
+  border-radius: 0 0 10px 0;
+  font-size:x-large;
+  padding:20px 20px 0 20px;
+}
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInTop {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInBottom {
+  0% {
+    transform: translateY(300%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+to {
+    opacity: 1;
+ } 
+} 
+  </style>
+</head>
+<body>
+    <header class="header">
+      <div class="menu">
+        <div class="head_lis" id="icon">My Portfolio</div>
+        <div class="head_list" id="home">Home</div>
+        <div class="head_list" id="achievements">Achievements</div>
+        <div class="head_list" id="about">About</div>
+        <div class="head_list" id="contact">Contact</div></div>
+    </header>
+    <!-- <div class="animm">
+    </div> -->
+  <div class="container">
+    <div class="main">
+      <!-- Content for column 2 -->
+      <div class="container1">
+        <div class="pic">
+            <img class="image" src="https://i.pinimg.com/1200x/2e/0f/0f/2e0f0f479d54e96b0a249b618b9d2a0f.jpg">
+            <center><h1 class="name">GODD</h1></center>
+        </div>
+        <div class="about">
+            <h1 id="about_head" style="padding:10px 0 0 50px;">ABOUT:</h1>
+            <h3 class="card1-text">  In the realm of Artificial Intelligence and Machine Learning, I stand as a seasoned professional with a robust foundation in cutting-edge technologies. My expertise spans a spectrum of AI and ML applications, showcasing a proficiency in areas such as [mention specific areas, like natural language processing, computer vision, or reinforcement learning]. With a wealth of experience, I have successfully contributed to the development and implementation of innovative solutions, underscoring my commitment to pushing the boundaries of what's possible in this rapidly evolving field. Recognized for my analytical prowess and strategic problem-solving, I am poised to bring a transformative impact to any project or team within the AIML landscape.</h3>
+        </div>
+      </div>
+      <center><h1>My Projects</h1></center>
+      <div class="container2">
+            <div class="card1" id="c1">
+                <img id="img1" src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2VudGltZW50JTIwYW5hbHlzaXN8ZW58MHx8MHx8fDA%3D">
+                <center><h3 class="card1-text">Sentiment Analysis Web App:Description: Build a web application that analyzes the sentiment of user-provided text using Natural Language Processing (NLP) and Machine Learning (ML) techniques.</h3></center>
+            </div>
+            <div class="card2" id="c2">   
+                <img id="img2" src="https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600">
+                <center><h3 class="card1-text"> Recommendation System for E-commerce: Description: Develop a recommendation system using AI and ML algorithms to suggest personalized products to users based on their browsing and purchase history.</h3></center>
+            </div>
+            <div class="card3" id="c3">
+                <img id="img3" src="https://cdn.pixabay.com/photo/2016/10/18/08/52/blood-pressure-monitor-1749577_640.jpg">
+                <center><h3 class="card1-text">Health Monitoring with Predictive Analytics: Description: Create a health monitoring system that utilizes AI and machine learning to predict potential health issues based on historical health data, helping users take proactive measures.</h3></center>
+            </div>
+      </div>
+      <!-- <center><h1>Projects</h1></center>
+      <div class="container2">
+            <div class="card1"></div>
+            <div class="card2"></div>
+            <div class="card3"></div>
+      </div>
+      <center><h1>Projects</h1></center>
+      <div class="container2">
+            <div class="card1"></div>
+            <div class="card2"></div>
+            <div class="card3"></div>
+      </div> -->
+      <div class="footer"></div>
+    </div>
+  </div>
+</body>
+</html>
