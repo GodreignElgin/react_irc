@@ -1,0 +1,8 @@
+.App {
+  font-family: 'font1';
+  background: linear-gradient(to bottom,rgb(22, 32, 52),rgb(36, 57, 82));
+  height: 750px;
+  width: 100%;
+  display:flex;
+  margin: 0 auto;
+} 

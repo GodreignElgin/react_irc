@@ -1,0 +1,13 @@
+
+body{
+  font-family: 'font1';
+    background: linear-gradient(to bottom,rgb(22, 32, 52),rgb(36, 57, 82));
+    height: 750px;
+    width: 100%;
+    display:flex;
+    width: 50%;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
